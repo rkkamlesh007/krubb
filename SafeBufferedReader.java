@@ -24,9 +24,9 @@ public class SafeBufferedReader extends BufferedReader {
 					lookingForLineFeed = false;
 					continue;
 				}
-			else {
-				return sb.toString();
-			}
+				else {
+					return sb.toString();
+				}
 			}
 			else if (c == '\r') {
 				lookingForLineFeed = true;
